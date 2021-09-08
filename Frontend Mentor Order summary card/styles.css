@@ -1,0 +1,129 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+p {
+  font-size: 16px;
+  color: grey;
+}
+
+body {
+  background-color: var(--pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url(images/pattern-background-desktop.svg) no-repeat fixed;
+  padding-top: 35px;
+  justify-content: space-between;
+}
+
+.card-container {
+  width: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  box-shadow: 0px 0px 10px black;
+}
+
+.card-container > * {
+  margin-bottom: 1rem;
+}
+
+.order-img {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+.order-summary {
+  padding-top: 5px;
+  font-size: 1.4rem;
+  color: var(--dark-blue);
+  font-weight: 700;
+  text-shadow: 0px 0px 1px var(--dark-blue);
+}
+
+.order-txt {
+  text-align: center;
+  max-width: 80%;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.order-annual-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--very-pale-blue);
+  width: 300px;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.annual-plan-details {
+  margin-right: 2rem;
+  font-weight: bold;
+}
+
+.annual-plan {
+  color: var(--dark-blue);
+  text-shadow: 0px 0px 1px var(--dark-blue);
+  padding-bottom: 5px;
+}
+
+.annual-plan-change:active {
+  color: -webkit-link;
+  opacity: 70%;
+}
+
+.order-pay {
+  padding: 1rem 5rem;
+  background-color: var(--bright-blue);
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  text-shadow: 0px 0px 1px white;
+  cursor: pointer;
+}
+
+.order-pay:active {
+  opacity: 70%;
+}
+
+.order-cancel {
+  padding: 0.5rem 0rem 1rem 0rem;
+  color: grey;
+  text-decoration: none;
+  text-shadow: 0px 0px 1px grey;
+}
+
+.order-cancel:active {
+  text-shadow: 0px 0px 1px black;
+  color: black;
+}
+
+.attribution {
+  margin: 0 auto;
+}
